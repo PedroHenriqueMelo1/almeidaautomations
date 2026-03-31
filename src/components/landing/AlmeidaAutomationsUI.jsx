@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../../assets/logo.png'
+import Logo from '../../assets/logo.png'
 
 function IconBase({ children, className = "h-5 w-5" }) {
   return (
@@ -112,36 +112,40 @@ function ZapIcon({ className = "h-5 w-5" }) {
 
 const solutions = [
   {
-    icon: BotIcon,
-    title: "Lead Scoring",
+    icon: FilterIcon,
+    title: "Base de contatos e prospecção",
     description:
-      "Modelo de scoring dinâmico baseado em duas dimensões — viabilidade e intenção — para qualificar e priorizar leads com maior probabilidade de fechamento, direcionando o esforço operacional para oportunidades com maior impacto em receita.",
+      "Disponibilização de contatos segmentados e estruturados para prospecção ativa, alinhados ao perfil ideal de cliente (ICP) e preparados para abordagem comercial.",
   },
   {
-    icon: WorkflowIcon,
-    title: "Orquestração de funil",
-    description: "Roteamento por SLA, gatilhos e handoffs automáticos.",
+    icon: BotIcon,
+    title: "Qualificação e priorização de leads",
+    description:
+      "Classificação inteligente de leads com base em critérios comerciais e comportamentais, consolidando scoring, ICP e análise de perfil em um único modelo de priorização.",
   },
   {
     icon: MessageIcon,
-    title: "Atendimento e classificação automatizada por IA",
+    title: "Abordagem automatizada",
     description:
-      "Abordagem inicial, triagem e classificação de leads totalmente automatizadas por inteligência artificial, utilizando um motor de decisão para qualificar, priorizar e direcionar cada lead desde o primeiro contato.",
+      "Execução de abordagem inicial com uso de inteligência artificial, estruturando comunicação, follow-up e contato em escala de forma padronizada e eficiente.",
   },
   {
-    icon: FilterIcon,
-    title: "Segmentação/ICP",
-    description: "Clusterização por origem, intenção e perfil.",
+    icon: WorkflowIcon,
+    title: "Distribuição e gestão comercial",
+    description:
+      "Organização e distribuição de leads para equipes comerciais, garantindo velocidade de resposta, priorização e melhor aproveitamento das oportunidades.",
   },
   {
     icon: ChartIcon,
-    title: "Telemetria",
-    description: "Métricas de throughput, latência e perdas por etapa.",
+    title: "Monitoramento e performance",
+    description:
+      "Acompanhamento de métricas operacionais e comerciais para identificar gargalos, perdas e oportunidades de otimização contínua.",
   },
   {
     icon: ZapIcon,
-    title: "Execução em tempo real",
-    description: "Ações e decisões automatizadas para velocidade máxima.",
+    title: "Soluções sob medida",
+    description:
+      "Desenvolvimento de sistemas personalizados para estruturação de processos comerciais, automação e aumento de eficiência operacional.",
   },
 ];
 
@@ -382,7 +386,7 @@ export default function AlmeidaAutomationsUI() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
           <div className="flex items-center gap-3">
             <div className="flex h-10 items-center overflow-hidden">
-              <img src={logo} alt="Almeida Solutions" className="h-16 w-auto object-contain object-left" />
+              <img src={Logo} alt="Almeida Solutions" className="h-16 w-auto object-contain object-left" />
             </div>
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-white">
@@ -413,20 +417,17 @@ export default function AlmeidaAutomationsUI() {
         <section id="inicio" className="border-b border-white/10">
           <div className="mx-auto grid max-w-6xl gap-12 px-6 py-24 md:grid-cols-[1.2fr_0.8fr]">
             <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.2em] text-zinc-300">
-                IA aplicada à conversão
-              </div>
+              
 
               <h1 className="text-4xl font-semibold leading-tight tracking-tight text-white md:text-6xl">
-                Estruture sua operação comercial e transforme demanda em receita previsível.
+                Escale sua operação comercial e eleve a qualidade da sua prospecção.
               </h1>
 
               <p className="max-w-2xl text-sm leading-relaxed text-zinc-400 md:text-base">
-                Sabemos que cada lead representa potencial direto de receita. Em muitos negócios,
-                esse valor se perde por falta de estrutura, prioridade e velocidade de resposta.
-                Por isso, tratamos cada entrada com rigor operacional — organizando,
-                qualificando e direcionando a demanda com foco absoluto em conversão e
-                aproveitamento máximo.
+                Atuamos na estruturação de operações comerciais combinando geração de contatos,
+                qualificação inteligente e abordagem automatizada. O foco é transformar volume em
+                oportunidades consistentes, com maior precisão na prospecção e melhor aproveitamento
+                do esforço comercial.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -488,9 +489,9 @@ export default function AlmeidaAutomationsUI() {
         <section id="solucoes" className="border-b border-white/10">
           <div className="mx-auto max-w-6xl px-6 py-16">
             <div className="mb-10 max-w-3xl">
-              <p className="text-xs uppercase tracking-[0.2em] text-zinc-500">Soluções</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-zinc-500">Produtos e serviços</p>
               <h2 className="text-2xl font-semibold text-white md:text-3xl">
-                Componentes para escalar conversão
+                Produtos e serviços para geração e conversão de oportunidades
               </h2>
             </div>
 
